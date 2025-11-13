@@ -1,67 +1,91 @@
 // components/Features.tsx
 'use client';
 
-const features = [
-  {
-    icon: 'brain',
-    title: 'Predictive Analytics',
-    description: 'Leverage AI to forecast trends and make data-driven decisions for your business operations.'
-  },
-  {
-    icon: 'zap',
-    title: 'Automated Workflows',
-    description: 'Streamline processes with intelligent automation that adapts to your business needs.'
-  },
-  {
-    icon: 'shield',
-    title: 'Enhanced Security',
-    description: 'Enterprise-grade security with AI-powered threat detection and prevention.'
-  },
-  {
-    icon: 'bar-chart',
-    title: 'Real-time Insights',
-    description: 'Get instant visibility into your operations with comprehensive dashboards and reports.'
-  },
-  {
-    icon: 'git-branch',
-    title: 'Seamless Integration',
-    description: 'Connect with your existing systems and tools without disrupting workflows.'
-  },
-  {
-    icon: 'users',
-    title: 'Collaborative Tools',
-    description: 'Enable teams to work together efficiently with shared insights and coordinated actions.'
-  }
-];
+import { BiBot, BiLineChart, BiMessageSquare } from "react-icons/bi";
+import { BsPlugin, BsRainbow } from "react-icons/bs";
+import { CgLayoutGrid } from "react-icons/cg";
+import { HiSparkles } from "react-icons/hi";
+
 
 export default function Features() {
+  const products = [
+    {
+      icon: <BiLineChart className="w-5 h-5 text-[var(--brand-text)]" />,
+      title: "SIFTS Analytics",
+      desc: "Intelligent dashboards with predictive insights, industry benchmarks, and KPI alerts.",
+    },
+    {
+      icon: <BiBot className="w-5 h-5 text-[var(--brand-text)]" />,
+      title: "AI Mate",
+      desc: "Your companion that performs tasks, answers, and automates workflows across apps.",
+    },
+    {
+      icon: <BiMessageSquare className="w-5 h-5 text-[var(--brand-text)]" />,
+      title: "Business Care",
+      desc: "AI CRM agent managing leads, interactions, and support with context.",
+    },
+    {
+      icon: <BsRainbow className="w-5 h-5 text-[var(--brand-text)]" />,
+      title: "SIFTS People",
+      desc: "Automate HR: leave, onboarding, payroll nudges, resignation handling — via chat or voice.",
+    },
+    {
+      icon: <BsPlugin className="w-5 h-5 text-[var(--brand-text)]" />,
+      title: "DeskFlow",
+      desc: "Helpdesk automation: categorize, assign, summarize, resolve. SLA‑aware responses.",
+    },
+    {
+      icon: <CgLayoutGrid className="w-5 h-5 text-[var(--brand-text)]" />,
+      title: "Optra",
+      desc: "Operational AI for procurement, logistics, and supply chain — optimize autonomously.",
+    },
+  ];
   return (
-    <section id="features" className="py-20">
-      <div className="mx-auto max-w-7xl px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'var(--brand-text)' }}>
-            Powerful Features for Modern ERP
-          </h2>
-          <p className="text-lg max-w-2xl mx-auto muted">
-            Discover how our AI engine transforms traditional ERP systems into intelligent business partners
-          </p>
+   <section id="products" className="mx-auto max-w-7xl px-4 py-16 md:py-20">
+      {/* Header */}
+      <div className="mx-auto max-w-3xl text-center">
+        <div
+          className="mb-3 inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium backdrop-blur-sm"
+          style={{
+            borderColor: "var(--brand-border)",
+            background: "#F8FAFC",
+            color: "var(--brand-subtext)",
+          }}
+        >
+          <HiSparkles className="w-3.5 h-3.5" /> Our Products
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <div key={index} className="card p-6 rounded-xl hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-lg brand-gradient flex items-center justify-center mb-4">
-                <i data-lucide={feature.icon} className="h-6 w-6 text-white"></i>
-              </div>
-              <h3 className="text-xl font-semibold mb-2" style={{ color: 'var(--brand-text)' }}>
-                {feature.title}
-              </h3>
-              <p className="muted">
-                {feature.description}
-              </p>
+        <h2
+          className="text-3xl md:text-4xl font-semibold tracking-tight"
+          style={{ color: "var(--brand-text)" }}
+        >
+          Meet the Sifts.ai Suite
+        </h2>
+        <p className="mt-3 leading-relaxed text-[var(--brand-subtext)]">
+          AI‑driven models replacing traditional ERP modules — each designed to automate, predict, and act.
+        </p>
+      </div>
+
+      {/* Product Grid */}
+      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {products.map((product, i) => (
+          <div
+            key={i}
+            className="group rounded-2xl p-6 shadow-sm card transition hover:shadow-md"
+          >
+            <div className="mb-4 inline-flex rounded-xl p-3 bg-[#F8FAFC]">
+              {product.icon}
             </div>
-          ))}
-        </div>
+            <h3
+              className="text-lg font-semibold"
+              style={{ color: "var(--brand-text)" }}
+            >
+              {product.title}
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-[var(--brand-subtext)]">
+              {product.desc}
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );

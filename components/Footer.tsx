@@ -13,9 +13,6 @@ export default function Footer() {
                 alt="Sifts.ai" 
                 className="h-8 w-auto"
               />
-              <span className="text-xl font-semibold" style={{ color: 'var(--brand-text)' }}>
-                Sifts.ai
-              </span>
             </div>
             <p className="muted max-w-md">
               Transforming enterprise resource planning with artificial intelligence. 
@@ -48,12 +45,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-        </div>
-        
-        <div className="border-t mt-8 pt-8 text-center" style={{ borderColor: 'var(--brand-border)' }}>
-          <p className="text-sm muted">
-            © {new Date().getFullYear()} Sifts.ai. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
