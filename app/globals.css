@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+
+
+:root {
+  --brand-from: #0094A3;
+  --brand-to: #006E7C;
+  --brand-text: #0B1220;
+  --brand-subtext: #475569;
+  --brand-border: #E5E7EB;
+  --brand-card: #FFFFFF;
+  --brand-page: #FFFFFF;
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, var(--brand-from), var(--brand-to));
+}
+
+.radial-bg {
+  background: radial-gradient(600px circle at 50% 10%, rgba(0,148,163,0.12), transparent);
+}
+
+.card {
+  background: var(--brand-card);
+  border: 1px solid var(--brand-border);
+}
+
+.muted {
+  color: var(--brand-subtext);
+}
