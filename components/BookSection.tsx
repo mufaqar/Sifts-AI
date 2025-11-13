@@ -24,11 +24,11 @@ const BookSection = () => {
             We’ll plug into a safe subset of your data and walk you through KPIs, insights, and actions live.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <button className="brand-gradient text-white font-semibold rounded-xl px-4 py-2 inline-flex items-center gap-2">
+            <button className="brand-gradient text-white cursor-pointer font-semibold rounded-xl px-4 py-2 inline-flex items-center gap-2">
               Book a Demo <FiArrowRight className="w-4 h-4" />
             </button>
             <button
-              className="rounded-xl px-4 py-2"
+              className="rounded-xl px-4 py-2 cursor-pointer"
               style={{
                 border: "1px solid var(--brand-border)",
                 color: "var(--brand-text)",

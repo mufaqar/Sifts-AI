@@ -45,7 +45,7 @@ const IntegrationsSection = () => {
         {integrations.map((name, i) => (
           <div
             key={i}
-            className="flex items-center justify-center rounded-xl p-4 text-sm bg-[#F8FAFC] text-[var(--brand-subtext)] card hover:shadow-sm transition"
+            className="flex items-center justify-center rounded-xl p-4 text-md font-bold bg-[#F8FAFC] text-[var(--brand-subtext)] card hover:shadow-sm transition"
           >
             {name}
           </div>

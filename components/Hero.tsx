@@ -12,11 +12,10 @@ import {
 
 export default function AiEngineHero() {
   return (
-    <section className="relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 -z-10" aria-hidden="true">
-        <div className="mx-auto h-[520px] max-w-7xl radial-bg"></div>
-      </div>
+    <section className="overflow-hidden" style={{
+          background:
+            "radial-gradient(600px circle at 50% 10%, rgba(0, 148, 163, 0.12), transparent)",
+        }}>
 
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-20 md:grid-cols-2 md:py-24">
         {/* Left Content */}
@@ -36,7 +35,7 @@ export default function AiEngineHero() {
             className="text-4xl md:text-5xl font-bold leading-[1.2] tracking-tight"
             style={{ color: "var(--brand-text)" }}
           >
-            Turn your slow ERP into a powerful{" "}
+            Turn your ERP into a powerful{" "}
             <span style={{ color: "var(--brand-from)" }}>AI-driven system</span>
           </h1>
 
@@ -81,7 +80,7 @@ export default function AiEngineHero() {
         </div>
 
         {/* Right Side (Mock Interaction Card) */}
-        <div className="rounded-2xl p-6 shadow-xl bg-white/80 backdrop-blur-sm">
+        <div className="rounded-2xl p-6 shadow-xl bg-white/80 backdrop-blur-sm card">
           <div className="rounded-xl p-4 bg-[#F8FAFC]">
             <div className="text-xs mb-3 text-[var(--brand-subtext)]">Sifts AI Engine · Simulation</div>
 
@@ -109,6 +108,7 @@ export default function AiEngineHero() {
           </div>
         </div>
       </div>
+          
     </section>
   );
 }

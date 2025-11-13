@@ -26,7 +26,9 @@ const Header = () => {
       >
         {/* Logo */}
         <div className="flex items-center gap-3">
+         <Link href="/">
           <Image src="/images/logo.png" alt="sifts.ai logo" width={120} height={50} />
+         </Link>
         </div>
 
         {/* Desktop Navigation */}
