@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
 import {
   FiArrowRight,
   FiCheckCircle,
@@ -35,11 +34,11 @@ export default function AiEngineHero() {
             className="text-4xl md:text-5xl font-bold leading-[1.2] tracking-tight"
             style={{ color: "var(--brand-text)" }}
           >
-            Turn your ERP into a powerful{" "}
-            <span style={{ color: "var(--brand-from)" }}>AI-driven system</span>
+            AI Agents Working Across Your Business 
+            <span style={{ color: "var(--brand-from)" }}> — From Insight to Execution</span>
           </h1>
 
-          <p className="mt-4 md:text-lg text-[var(--brand-subtext)]">
+          <p className="mt-4 md:text-lg text-(--brand-subtext)">
             Sifts.ai built a unified <strong>AI Engine</strong> that automates and optimizes every module —
             HR, Finance, Procurement, Sales, Support — with chat &amp; voice actions, predictions,
             and safe, auditable execution.
@@ -65,7 +64,7 @@ export default function AiEngineHero() {
             </Link>
           </div>
 
-          <div className="mt-8 grid grid-cols-2 gap-4 text-xs text-[var(--brand-subtext)]">
+          <div className="mt-8 grid grid-cols-2 gap-4 text-xs text-(--brand-subtext)">
             {[
               "AI engine powering all modules",
               "Fully conversational (chat & voice)",
@@ -82,20 +81,20 @@ export default function AiEngineHero() {
         {/* Right Side (Mock Interaction Card) */}
         <div className="rounded-2xl p-6 shadow-xl bg-white/80 backdrop-blur-sm card">
           <div className="rounded-xl p-4 bg-[#F8FAFC]">
-            <div className="text-xs mb-3 text-[var(--brand-subtext)]">Sifts AI Engine · Simulation</div>
+            <div className="text-xs mb-3 text-(--brand-subtext)">Sifts AI Engine · Simulation</div>
 
             {/* User Message */}
-            <div className="rounded-lg p-3 bg-white text-sm flex items-center gap-2 text-[var(--brand-text)]">
+            <div className="rounded-lg p-3 bg-white text-sm flex items-center gap-2 text-(--brand-text)">
               <FiMessageSquare className="w-4 h-4" />
               “Generate financial summary for Q3 and predict Q4 revenue.”
             </div>
 
             {/* Output */}
             <div className="mt-3 rounded-lg p-3 bg-white text-sm">
-              <div className="mb-2 flex items-center gap-2 text-[var(--brand-text)]">
+              <div className="mb-2 flex items-center gap-2 text-(--brand-text)">
                 <FiZap className="w-4 h-4" /> Output
               </div>
-              <p className="text-xs leading-relaxed text-[var(--brand-subtext)]">
+              <p className="text-xs leading-relaxed text-(--brand-subtext)">
                 Q3 revenue: SAR 3.9M (+6%) — Forecast Q4: SAR 4.2M based on trend &amp; pipeline. Focus:
                 retention &amp; cross-sell.
               </p>

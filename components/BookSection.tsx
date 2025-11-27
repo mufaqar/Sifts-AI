@@ -20,7 +20,7 @@ const BookSection = () => {
           >
             See Sifts on your data
           </h3>
-          <p className="mt-2 text-[var(--brand-subtext)]">
+          <p className="mt-2 text-(--brand-subtext)">
             We’ll plug into a safe subset of your data and walk you through KPIs, insights, and actions live.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
@@ -28,7 +28,7 @@ const BookSection = () => {
               Book a Demo <FiArrowRight className="w-4 h-4" />
             </button>
             <button
-              className="rounded-xl px-4 py-2 cursor-pointer"
+              className="rounded-xl px-4 py-2 cursor-pointer hover:scale-105 transition"
               style={{
                 border: "1px solid var(--brand-border)",
                 color: "var(--brand-text)",

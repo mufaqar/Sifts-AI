@@ -20,7 +20,7 @@ const StatsSection = () => {
             <div className="text-3xl font-semibold" style={{ color: "var(--brand-text)" }}>
               {stat.value}
             </div>
-            <div className="mt-1 text-xs text-[var(--brand-subtext)]">
+            <div className="mt-1 text-xs text-(--brand-subtext)">
               {stat.label}
             </div>
           </div>
