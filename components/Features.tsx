@@ -11,12 +11,12 @@ export default function Features() {
   const products = [
     {
       icon: <BiLineChart className="w-5 h-5 text-[var(--brand-text)]" />,
-      title: "SIFTS Analytics",
+      title: "AI Business Advisor",
       desc: "Intelligent dashboards with predictive insights, industry benchmarks, and KPI alerts.",
     },
     {
       icon: <BiBot className="w-5 h-5 text-[var(--brand-text)]" />,
-      title: "AI Mate",
+      title: "AI Workforce Agent",
       desc: "Your companion that performs tasks, answers, and automates workflows across apps.",
     },
     {
@@ -41,7 +41,7 @@ export default function Features() {
     },
   ];
   return (
-   <section id="products" className="mx-auto max-w-7xl px-4 py-16 md:py-20">
+   <section id="ai-agents" className="mx-auto max-w-7xl px-4 py-16 md:py-20">
       {/* Header */}
       <div className="mx-auto max-w-3xl text-center">
         <div
@@ -52,17 +52,15 @@ export default function Features() {
             color: "var(--brand-subtext)",
           }}
         >
-          <HiSparkles className="w-3.5 h-3.5" /> Our Products
+          <HiSparkles className="w-3.5 h-3.5" /> AI Agents
         </div>
         <h2
           className="text-3xl md:text-4xl font-semibold tracking-tight"
           style={{ color: "var(--brand-text)" }}
         >
-          Meet the Sifts.ai Suite
+          End to end agents trained to automate and enhance core business areas — safely orchestrated and explainable.
         </h2>
-        <p className="mt-3 leading-relaxed text-[var(--brand-subtext)]">
-          AI‑driven models replacing traditional ERP modules — each designed to automate, predict, and act.
-        </p>
+        
       </div>
 
       {/* Product Grid */}

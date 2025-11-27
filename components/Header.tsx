@@ -10,7 +10,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: "#products", label: "Products" },
+    { href: "#ai-agents", label: "AI Agents" },
     { href: "#dashboards", label: "Dashboards" },
     { href: "#automation", label: "Automation" },
     { href: "#integrations", label: "Integrations" },

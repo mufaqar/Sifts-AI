@@ -31,8 +31,8 @@ const Footer = () => {
             </div>
             <ul className="mt-3 space-y-2 text-sm text-[var(--brand-subtext)]">
               <li>
-                <a className="opacity-80 hover:opacity-100 transition" href="#products">
-                  Products
+                <a className="opacity-80 hover:opacity-100 transition" href="#ai-agents">
+                AI Agents
                 </a>
               </li>
               <li>
