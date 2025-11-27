@@ -11,8 +11,6 @@ const Header = () => {
 
   const navLinks = [
     { href: "#ai-agents", label: "AI Agents" },
-    { href: "#dashboards", label: "Dashboards" },
-    { href: "#automation", label: "Automation" },
     { href: "#integrations", label: "Integrations" },
     { href: "#security", label: "Security" },
     { href: "#contact", label: "Contact" },

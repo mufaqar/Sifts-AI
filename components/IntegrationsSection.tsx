@@ -1,15 +1,15 @@
 "use client";
-import React from "react";
+import Image from "next/image";
 import { PiSparkleFill } from "react-icons/pi";
 
 const IntegrationsSection = () => {
   const integrations = [
-    { name: "Odoo", symbol: "O" },
-    { name: "Salesforce", symbol: "S" },
-    { name: "Oracle", symbol: "O" },
-    { name: "MS Dynamics", symbol: "M" },
-    { name: "Excel", symbol: "E" },
-    { name: "Power BI", symbol: "P" },
+    { logo: "/images/odo.png", symbol: "O" },
+    { logo: "/images/salesforce.png", symbol: "S" },
+    { logo: "/images/oracle.png", symbol: "O" },
+    { logo: "/images/dyn.png", symbol: "M" },
+    { logo: "/images/excel.png", symbol: "E" },
+    { logo: "/images/power.png", symbol: "P" },
   ];
 
   return (
@@ -55,12 +55,10 @@ const IntegrationsSection = () => {
             <div className="text-sm font-bold w-10 h-10 flex items-center justify-center rounded-xl p-4 bg-white text-(--brand-subtext) card">
               {item?.symbol}
             </div>
-            <p>
-              {item?.name}
-            </p>
+            <Image src={item?.logo} alt={item?.symbol} width={100} height={80} />
           </div>
         ))}
-        <p className="text-sm font-medium text-(--brand-subtext) text-center col-span-6 mt-8">
+        <p className="text-sm font-medium text-(--brand-subtext) text-center md:col-span-6 col-span-2 mt-8">
           ...and many more!
         </p>
       </div>
