@@ -11,7 +11,7 @@ const voices = [
         language: "English",
         flag: "/images/flags/uk.svg",
         avatar: "/images/video1.png",
-        audio: "/audio/kim.mp3",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const voices = [
         language: "English",
         flag: "/images/flags/usa.svg",
         avatar: "/images/video2.png",
-        audio: "/audio/dave.mp3",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const voices = [
         language: "German",
         flag: "/images/flags/german.svg",
         avatar: "/images/video3.png",
-        audio: "/audio/stephanie.mp3",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
     },
     {
         id: 4,
@@ -35,7 +35,7 @@ const voices = [
         language: "Norwegian",
         flag: "/images/flags/norway.svg",
         avatar: "/images/video4.png",
-        audio: "/audio/aksel.mp3",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
     },
 ];
 
