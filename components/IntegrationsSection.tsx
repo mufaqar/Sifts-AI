@@ -4,12 +4,12 @@ import { PiSparkleFill } from "react-icons/pi";
 
 const IntegrationsSection = () => {
   const integrations = [
-    { logo: "/images/odo.png", symbol: "O" },
-    { logo: "/images/salesforce.png", symbol: "S" },
-    { logo: "/images/oracle.png", symbol: "O" },
-    { logo: "/images/dyn.png", symbol: "M" },
-    { logo: "/images/excel.png", symbol: "E" },
-    { logo: "/images/power.png", symbol: "P" },
+    { logo: "/images/odo.png", symbol: "Odoo" },
+    { logo: "/images/salesforce.png", symbol: "Salesforce" },
+    { logo: "/images/oracle.png", symbol: "Oracle" },
+    { logo: "/images/dyn.png", symbol: "MS Dynamics" },
+    { logo: "/images/excel.png", symbol: "Excel" },
+    { logo: "/images/power.png", symbol: "Power BI" },
   ];
 
   return (
@@ -52,10 +52,12 @@ const IntegrationsSection = () => {
             key={i}
             className=" flex flex-col gap-5 items-center justify-center rounded-xl px-4 py-8 font-bold bg-white text-(--brand-subtext) card hover:shadow-sm transition"
           >
-            <div className="text-sm font-bold w-10 h-10 flex items-center justify-center rounded-xl p-4 bg-white text-(--brand-subtext) card">
-              {item?.symbol}
+            <div className="flex items-center justify-center rounded-xl px-2 bg-white text-(--brand-subtext) card">
+              <Image src={item?.logo} alt={item?.symbol} width={100} height={80} className="min-h-[60px] object-contain" />
             </div>
-            <Image src={item?.logo} alt={item?.symbol} width={100} height={80} />
+            <p className="md:text-base text-sm">
+              {item?.symbol}
+            </p>
           </div>
         ))}
         <p className="text-sm font-medium text-(--brand-subtext) text-center md:col-span-6 col-span-2 mt-8">
