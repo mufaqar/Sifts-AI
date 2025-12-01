@@ -12,9 +12,9 @@ import {
 export default function AiEngineHero() {
   return (
     <section className="overflow-hidden" style={{
-          background:
-            "radial-gradient(600px circle at 50% 10%, rgba(0, 148, 163, 0.12), transparent)",
-        }}>
+      background:
+        "radial-gradient(600px circle at 50% 10%, rgba(0, 148, 163, 0.12), transparent)",
+    }}>
 
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-20 md:grid-cols-2 md:py-24">
         {/* Left Content */}
@@ -34,7 +34,7 @@ export default function AiEngineHero() {
             className="text-4xl md:text-5xl font-bold leading-[1.2] tracking-tight"
             style={{ color: "var(--brand-text)" }}
           >
-            AI Agents Working Across Your Business 
+            AI Agents Working Across Your Business
             <span style={{ color: "var(--brand-from)" }}> — From Insight to Execution</span>
           </h1>
 
@@ -47,20 +47,20 @@ export default function AiEngineHero() {
 
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/">
-            <button className="cursor-pointer brand-gradient text-white font-semibold rounded-xl px-5 py-2 inline-flex items-center gap-2">
-              Book a Demo <FiArrowRight className="w-4 h-4" />
-            </button>
+              <button className="cursor-pointer brand-gradient text-white font-semibold rounded-xl px-5 py-2 inline-flex items-center gap-2">
+                Book a Demo <FiArrowRight className="w-4 h-4" />
+              </button>
             </Link>
             <Link href='/'>
-            <button
-              className="rounded-xl px-5 py-2 font-medium cursor-pointer"
-              style={{
-                border: "1px solid var(--brand-border)",
-                color: "var(--brand-text)",
-              }}
-            >
-              Learn More
-            </button>
+              <button
+                className="rounded-xl px-5 py-2 font-medium cursor-pointer"
+                style={{
+                  border: "1px solid var(--brand-border)",
+                  color: "var(--brand-text)",
+                }}
+              >
+                Learn More
+              </button>
             </Link>
           </div>
 
@@ -79,35 +79,17 @@ export default function AiEngineHero() {
         </div>
 
         {/* Right Side (Mock Interaction Card) */}
-        <div className="rounded-2xl p-6 shadow-xl bg-white/80 backdrop-blur-sm card">
-          <div className="rounded-xl p-4 bg-[#F8FAFC]">
-            <div className="text-xs mb-3 text-(--brand-subtext)">Sifts AI Engine · Simulation</div>
-
-            {/* User Message */}
-            <div className="rounded-lg p-3 bg-white text-sm flex items-center gap-2 text-(--brand-text)">
-              <FiMessageSquare className="w-4 h-4" />
-              “Generate financial summary for Q3 and predict Q4 revenue.”
-            </div>
-
-            {/* Output */}
-            <div className="mt-3 rounded-lg p-3 bg-white text-sm">
-              <div className="mb-2 flex items-center gap-2 text-(--brand-text)">
-                <FiZap className="w-4 h-4" /> Output
-              </div>
-              <p className="text-xs leading-relaxed text-(--brand-subtext)">
-                Q3 revenue: SAR 3.9M (+6%) — Forecast Q4: SAR 4.2M based on trend &amp; pipeline. Focus:
-                retention &amp; cross-sell.
-              </p>
-              <div className="mt-3 text-right">
-                <button className="rounded-lg px-3 py-1.5 text-xs font-semibold text-white brand-gradient">
-                  Save to Dashboard
-                </button>
-              </div>
-            </div>
-          </div>
+        <div className="relative w-full md:aspect-video aspect-square rounded-xl overflow-hidden border border-(--brand-border)">
+          <iframe
+            src="https://www.youtube.com/embed/PZ7NP9MXxbU?start=41&autoplay=1&mute=1&playsinline=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=PZ7NP9MXxbU"
+            className="w-full h-full"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          />
         </div>
+
       </div>
-          
+
     </section>
   );
 }
