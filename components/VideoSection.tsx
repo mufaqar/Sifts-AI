@@ -70,29 +70,29 @@ export default function VideoSection() {
             {isPlaying ? (
                 <VideoPlayer videoId={selectedVideo} />
             ) : (
-                <div className="mt-10 mx-auto max-w-4xl bg-white rounded-3xl md:py-12 md:px-8 p-8 border border-(--brand-border)">
+                <div className="mt-10 mx-auto max-w-4xl bg-white rounded-3xl md:py-12 md:px-8 p-5 border border-(--brand-border)">
                     <div className="flex flex-col md:flex-row gap-10 items-center">
                         {/* Avatar */}
-                        <div className="md:w-1/3 w-full relative">
+                        <div className="md:w-1/3 w-fit mx-auto relative">
                             <Image
                                 src="/images/video1.png"
-                                width={350}
-                                height={350}
+                                width={250}
+                                height={250}
                                 alt="Speaker"
                                 className="rounded-full border-4 border-blue-600 object-cover" />
 
-                            <span className="absolute top-3 right-3 border-2 h-8 w-8 border-blue-600 bg-black text-white text-xs font-bold px-2 py-1 rounded-full">
+                            <span className="absolute top-6 right-6 border-2 h-8 w-8 border-blue-600 bg-black text-white text-xs font-bold px-2 py-1 rounded-full">
                                 AI
                             </span>
                         </div>
-                        <div className="relative md:w-1/3 w-full">
+                        <div className="relative md:w-2/3 w-full">
                             <p className="text-sm font-medium text-(--brand-subtext)">
                                 and a complimentary dance class <span className="brand-gradient text-white px-1 py-1 rounded ">voucher</span>
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col md:flex-row gap-10 mt-10">
-                        <div className="md:w-2/3 w-full flex items-center space-x-4">
+                    <div className="flex flex-row md:flex-row gap-10 mt-10">
+                        <div className="w-2/3 flex items-center space-x-4">
                             <button
                                 className="text-sm bg-blue-600 text-white flex items-center justify-center min-w-10 min-h-10 rounded-full cursor-pointer">
                                 <FaPlay />
@@ -108,7 +108,7 @@ export default function VideoSection() {
                                 className="w-full h-1 rounded-lg accent-blue-600 cursor-pointer"
                             />
                         </div>
-                        <div className="relative md:w-1/3 w-full flex items-center justify-end space-x-2">
+                        <div className="relative w-1/3 flex items-center justify-end space-x-2">
                             {/* Volume Control */}
                             <button
                                 className="text-sm text-gray-700 flex items-center justify-center w-8 h-8 cursor-pointer"
@@ -128,9 +128,6 @@ export default function VideoSection() {
                 </div>
             )
             }
-            {/* Video Player */}
-
-
             {/* Video List */}
             <div className="mx-auto max-w-5xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 mt-12">
                 {VideoList.map((item, idx) => (
