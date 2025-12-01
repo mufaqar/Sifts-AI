@@ -8,6 +8,8 @@ import { CgLayoutGrid } from "react-icons/cg";
 import { FaChartBar, FaHeadphonesAlt } from "react-icons/fa";
 import { FiSettings } from "react-icons/fi";
 import { HiSparkles } from "react-icons/hi";
+import Animation from "./animation";
+import { fadeUp } from "@/lib/animations/variants";
 
 
 export default function Features() {
@@ -61,47 +63,48 @@ export default function Features() {
     <section id="ai-agents" className="mx-auto max-w-7xl px-4 py-16 md:py-20">
       {/* Header */}
       <div className="mx-auto max-w-3xl text-center">
-        <div
-          className="mb-3 inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium backdrop-blur-sm"
-          style={{
-            borderColor: "var(--brand-border)",
-            background: "#F8FAFC",
-            color: "var(--brand-subtext)",
-          }}
-        >
-          <HiSparkles className="w-3.5 h-3.5" /> AI Agents
-        </div>
-        <h2
-          className="text-3xl md:text-4xl font-semibold tracking-tight"
-          style={{ color: "var(--brand-text)" }}
-        >
-          End to end agents trained to automate and enhance core business areas — safely orchestrated and explainable.
-        </h2>
-
+        <Animation variants={fadeUp}>
+          <div
+            className="mb-3 inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium backdrop-blur-sm"
+            style={{
+              borderColor: "var(--brand-border)",
+              background: "#F8FAFC",
+              color: "var(--brand-subtext)",
+            }}
+          >
+            <HiSparkles className="w-3.5 h-3.5" /> AI Agents
+          </div>
+          <h2
+            className="text-3xl md:text-4xl font-semibold tracking-tight"
+            style={{ color: "var(--brand-text)" }}
+          >
+            End to end agents trained to automate and enhance core business areas — safely orchestrated and explainable.
+          </h2>
+        </Animation>
       </div>
 
       {/* Product Grid */}
       <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {products.map((product, i) => (
-          <div
-            key={i}
-            className="group rounded-2xl p-6 shadow-sm card transition hover:shadow-md"
-          >
-            <div className="mb-4 inline-flex rounded-xl p-2.5 bg-[#F8FAFC] border border-(--brand-border)">
-              {product.icon}
-            </div>
-            <h3
-              className="text-lg font-semibold"
-              style={{ color: "var(--brand-text)" }}
+          <Animation key={i} variants={fadeUp}>
+            <div className="group rounded-2xl p-6 shadow-sm card transition hover:shadow-md h-full"
             >
-              {product.title}
-            </h3>
-            <div className="feature_content"
-              dangerouslySetInnerHTML={{ __html: product?.desc || "" }} />
-            <Link href={`${product?.link}`} className="rounded-lg px-3 py-1.5 text-xs font-semibold text-white brand-gradient mt-5 inline-flex">
-              View Demo flow
-            </Link>
-          </div>
+              <div className="mb-4 inline-flex rounded-xl p-2.5 bg-[#F8FAFC] border border-(--brand-border)">
+                {product.icon}
+              </div>
+              <h3
+                className="text-lg font-semibold"
+                style={{ color: "var(--brand-text)" }}
+              >
+                {product.title}
+              </h3>
+              <div className="feature_content"
+                dangerouslySetInnerHTML={{ __html: product?.desc || "" }} />
+              <Link href={`${product?.link}`} className="rounded-lg px-3 py-1.5 text-xs font-semibold text-white brand-gradient mt-5 inline-flex">
+                View Demo flow
+              </Link>
+            </div>
+          </Animation>
         ))}
       </div>
     </section>
