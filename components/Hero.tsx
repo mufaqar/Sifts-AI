@@ -81,7 +81,7 @@ export default function AiEngineHero() {
         {/* Right Side (Mock Interaction Card) */}
         <div className="relative w-full md:aspect-video aspect-square rounded-xl overflow-hidden border border-(--brand-border)">
           <iframe
-            src="https://www.youtube.com/embed/PZ7NP9MXxbU?start=41&autoplay=1&playsinline=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=PZ7NP9MXxbU"
+            src="https://www.youtube.com/embed/PZ7NP9MXxbU?start=41&autoplay=1&mute=1&playsinline=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=PZ7NP9MXxbU"
             className="w-full h-full"
             allow="autoplay; encrypted-media"
             allowFullScreen
