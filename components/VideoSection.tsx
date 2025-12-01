@@ -11,21 +11,21 @@ const VideoList = [
         name: "Zainab",
         language: "English",
         avatar: "/images/video1.png",
-        video: "https://www.youtube.com/watch?v=6nDmtt1I4TY&pp=ygUbZHVtbXkgYWkgdGVjaG5vbG9neSBleGFtcGxl",
+        video: "https://www.youtube.com/watch?v=XEsz0Sv9HTg",
     },
     {
         id: 2,
         name: "Weaam",
         language: "English",
         avatar: "/images/video3.png",
-        video: "https://www.youtube.com/watch?v=c0m6yaGlZh4&pp=ygUbZHVtbXkgYWkgdGVjaG5vbG9neSBleGFtcGxl",
+        video: "https://www.youtube.com/watch?v=JywMhmS0I_E",
     },
     {
         id: 3,
         name: "Ali",
         language: "German",
         avatar: "/images/video4.png",
-        video: "https://www.youtube.com/watch?v=JcXKbUIebrU&pp=ygUbZHVtbXkgYWkgdGVjaG5vbG9neSBleGFtcGxl",
+        video: "https://www.youtube.com/watch?v=SRGCBzHsauE",
     },
 ];
 
@@ -136,11 +136,11 @@ export default function VideoSection() {
                 {VideoList.map((item, idx) => (
                     <div
                         key={idx}
-                      onClick={() => {
+                        onClick={() => {
                             setSelectedVideo(getYouTubeId(item.video)); // change video
                             setIsPlaying(true); // open player
                         }}
-                        className={`${ selectedVideo === getYouTubeId(item.video) ? "border-black/50" : " border-(--brand-border)"} py-1.5 px-2 rounded-full flex items-center gap-3 bg-[#F8FAFC] border `}
+                        className={`${selectedVideo === getYouTubeId(item.video) ? "border-black/50" : " border-(--brand-border)"} py-1.5 px-2 rounded-full flex items-center gap-3 bg-[#F8FAFC] border cursor-pointer `}
                     >
                         <Image
                             src={item.avatar}

@@ -19,7 +19,7 @@ const Footer = () => {
                 <Image src="/images/logo.png" alt="sifts.ai logo" width={120} height={50} />
               </Link>
             </div>
-            <p className="mt-3 text-sm text-[var(--brand-subtext)]">
+            <p className="mt-3 text-sm text-(--brand-subtext)">
               The assistant layer for ERP and business apps.
             </p>
           </div>
@@ -29,10 +29,10 @@ const Footer = () => {
             <div className="text-sm font-semibold" style={{ color: "var(--brand-text)" }}>
               Product
             </div>
-            <ul className="mt-3 space-y-2 text-sm text-[var(--brand-subtext)]">
+            <ul className="mt-3 space-y-2 text-sm text-(--brand-subtext)">
               <li>
                 <a className="opacity-80 hover:opacity-100 transition" href="#ai-agents">
-                AI Agents
+                  AI Agents
                 </a>
               </li>
               <li>
@@ -53,7 +53,7 @@ const Footer = () => {
             <div className="text-sm font-semibold" style={{ color: "var(--brand-text)" }}>
               Company
             </div>
-            <ul className="mt-3 space-y-2 text-sm text-[var(--brand-subtext)]">
+            <ul className="mt-3 space-y-2 text-sm text-(--brand-subtext)">
               <li>
                 <a className="opacity-80 hover:opacity-100 transition" href="#">
                   About
@@ -77,11 +77,19 @@ const Footer = () => {
             <div className="text-sm font-semibold" style={{ color: "var(--brand-text)" }}>
               Contact
             </div>
-            <ul className="mt-3 space-y-2 text-sm text-[var(--brand-subtext)]">
-              <li>info@sifts.ai</li>
-              <li>+966 • +34 • +32</li>
+            <ul className="mt-3 space-y-2">
+              <li>
+                <Link href="mailto:hi@sifts.ai" target="_blank" className="text-sm text-(--brand-subtext) hover:text-(--brand-from)">
+                  hi@sifts.ai
+                </Link>
+              </li>
+              <li>
+                <Link href="tel:+966570786312" className="text-sm text-(--brand-subtext) hover:text-(--brand-from)">
+                +966 570 786 312 
+                </Link>
+              </li>
             </ul>
-            <div className="mt-4 text-xs text-[var(--brand-subtext)]">
+            <div className="mt-4 text-xs text-(--brand-subtext)">
               © 2025 Sifts.ai — data‑driven decisions.
             </div>
           </div>
