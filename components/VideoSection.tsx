@@ -8,25 +8,29 @@ import Animation from "./animation";
 import { fadeUp } from "@/lib/animations/variants";
 
 const VideoList = [
+
     {
         id: 1,
-        name: "Zainab",
+        name: "Weaam",
         language: "English",
-        avatar: "/images/video1.png",
+        avatar: "/images/weaam.jpg",
         video: "https://www.youtube.com/watch?v=XEsz0Sv9HTg",
+        
     },
     {
         id: 2,
-        name: "Weaam",
+        name: "Zainab",
         language: "English",
-        avatar: "/images/video3.png",
+        avatar: "/images/zainab.jpg",
+        
         video: "https://www.youtube.com/watch?v=JywMhmS0I_E",
     },
+    
     {
         id: 3,
         name: "Ali",
-        language: "German",
-        avatar: "/images/video4.png",
+        language: "English",
+        avatar: "/images/ali.jpg",
         video: "https://www.youtube.com/watch?v=SRGCBzHsauE",
     },
 ];
@@ -80,15 +84,13 @@ export default function VideoSection() {
                             {/* Avatar */}
                             <div className="md:w-1/3 w-fit mx-auto relative">
                                 <Image
-                                    src="/images/video1.png"
-                                    width={250}
-                                    height={250}
+                                    src="/images/zainab.jpg"
+                                    width={300}
+                                    height={300}
                                     alt="Speaker"
-                                    className="rounded-full border-4 border-blue-600 object-cover" />
+                                    className="rounded-full  object-cover" />
 
-                                <span className="absolute top-6 right-6 border-2 h-8 w-8 border-blue-600 bg-black text-white text-xs font-bold px-2 py-1 rounded-full">
-                                    AI
-                                </span>
+                               
                             </div>
                             <div className="relative md:w-2/3 w-full">
                                 <p className="text-sm font-medium text-(--brand-subtext)">
