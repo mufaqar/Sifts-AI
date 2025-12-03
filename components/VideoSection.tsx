@@ -92,15 +92,14 @@ export default function VideoSection() {
 
                                
                             </div>
-                            <div className="relative md:w-2/3 w-full">
-                                <p className="text-sm font-medium text-(--brand-subtext)">
-                                    and a complimentary dance class <span className="brand-gradient text-white px-1 py-1 rounded ">voucher</span>
-                                </p>
-                            </div>
+                            
                         </div>
                         <div className="flex flex-row md:flex-row gap-10 mt-10">
                             <div className="w-2/3 flex items-center space-x-4">
-                                <button
+                                <button  onClick={() => {
+                                setSelectedVideo(getYouTubeId('https://www.youtube.com/watch?v=XEsz0Sv9HTg')); // change video
+                                setIsPlaying(true); // open player
+                            }}
                                     className="text-sm bg-blue-600 text-white flex items-center justify-center min-w-10 min-h-10 rounded-full cursor-pointer">
                                     <FaPlay />
                                 </button>
