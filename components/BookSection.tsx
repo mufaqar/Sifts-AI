@@ -3,6 +3,7 @@ import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import Animation from "./animation";
 import { fadeUp } from "@/lib/animations/variants";
+import Link from "next/link";
 
 const BookSection = () => {
   return (
@@ -32,18 +33,17 @@ const BookSection = () => {
           </Animation>
           <Animation variants={fadeUp}>
             <div className="mt-6 flex flex-wrap gap-3">
-              <button className="brand-gradient text-white cursor-pointer font-semibold rounded-xl px-4 py-2 inline-flex items-center gap-2">
+              <Link href="/contact" className="brand-gradient text-white cursor-pointer font-semibold rounded-xl px-4 py-2 inline-flex items-center gap-2">
                 Book a Demo <FiArrowRight className="w-4 h-4" />
-              </button>
-              <button
-                className="rounded-xl px-4 py-2 cursor-pointer hover:scale-105 transition"
+              </Link>
+              <Link href="/contact"   className="rounded-xl px-4 py-2 cursor-pointer hover:scale-105 transition"
                 style={{
                   border: "1px solid var(--brand-border)",
                   color: "var(--brand-text)",
                 }}
               >
                 Talk to Sales
-              </button>
+              </Link>
             </div>
           </Animation>
         </div>

@@ -13,7 +13,7 @@ const Header = () => {
     { href: "#ai-agents", label: "AI Agents" },
     { href: "#integrations", label: "Integrations" },
     { href: "#security", label: "Security" },
-    { href: "#contact", label: "Contact" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
@@ -43,7 +43,7 @@ const Header = () => {
 
         {/* CTA and Mobile Menu Button */}
         <div className="flex items-center gap-2">
-          <Link href="">
+          <Link href="/contact">
             <button className="hidden md:inline-flex brand-gradient text-white text-base font-semibold rounded-xl px-3 py-1.5 items-center gap-2">
               Book a Demo <BsArrowRight className="w-4 h-4" />
             </button>
@@ -72,7 +72,7 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <Link href="">
+             <Link href="/contact">
               <button className="text-sm brand-gradient text-white font-semibold rounded-xl px-3 py-2 flex items-center justify-center gap-2 mt-2">
                 Book a Demo <BsArrowRightCircle className="w-4 h-4" />
               </button>

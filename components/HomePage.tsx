@@ -14,14 +14,14 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen" style={{ background: 'var(--brand-page)' }}>
-      <Header />
+   
       <Hero />
       <Features />
       <VideoSection />
       <IntegrationsSection />
       <SecuritySection />
       <BookSection />
-      <Footer />
+    
 
     </div>
   );
