@@ -31,19 +31,19 @@ const Footer = () => {
             </div>
             <ul className="mt-3 space-y-2 text-sm text-(--brand-subtext)">
               <li>
-                <a className="opacity-80 hover:opacity-100 transition" href="#ai-agents">
+                <Link className="opacity-80 hover:opacity-100 transition" href="/#ai-agents">
                   AI Agents
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="opacity-80 hover:opacity-100 transition" href="#dashboards">
+                <Link className="opacity-80 hover:opacity-100 transition" href="/#dashboards">
                   Dashboards
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="opacity-80 hover:opacity-100 transition" href="#automation">
+                <Link className="opacity-80 hover:opacity-100 transition" href="/#automation">
                   Automation
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -55,19 +55,19 @@ const Footer = () => {
             </div>
             <ul className="mt-3 space-y-2 text-sm text-(--brand-subtext)">
               <li>
-                <a className="opacity-80 hover:opacity-100 transition" href="#">
+                <Link className="opacity-80 hover:opacity-100 transition" href="/">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="opacity-80 hover:opacity-100 transition" href="#">
+                <Link className="opacity-80 hover:opacity-100 transition" href="/contact">
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="opacity-80 hover:opacity-100 transition" href="#">
+                <Link className="opacity-80 hover:opacity-100 transition" href="/contact">
                   Privacy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

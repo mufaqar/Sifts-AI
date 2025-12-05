@@ -16,7 +16,7 @@ export default function Features() {
   const products = [
     {
       icon: <FaChartBar className="text-xl w-8 h-8 text-(--brand-from)" />,
-      link: "#",
+      link: "#ai-demo-service",
       title: "AI Business Advisor",
       desc: `<p>Analyzes performance, builds dynamic dashboards, and recommends improvements based on trends and industry benchmarks.</p>
       <ul>
@@ -28,7 +28,7 @@ export default function Features() {
     },
     {
       icon: <BiBot className="text-xl w-8 h-8 text-(--brand-from)" />,
-      link: "#",
+      link: "#ai-demo-service",
       title: "AI Workforce Agent",
       desc: `<p>Performs day-to-day tasks across Sales, HR, Purchase, and Warehouse — all from a simple prompt.</p>
       <ul>
@@ -39,7 +39,7 @@ export default function Features() {
     },
     {
       icon: <FaHeadphonesAlt className="text-xl w-8 h-8 text-(--brand-from)" />,
-      link: "#",
+      link: "#ai-demo-service",
       title: "AI Service Agent",
       desc: `<p>Manages CRM, POS, Helpdesk, and call/chat support for inbound and outbound interactions.</p>
       <ul>
@@ -50,6 +50,7 @@ export default function Features() {
     },
     {
       icon: <FiSettings className="text-xl w-8 h-8 text-(--brand-from)" />,
+       link: "/contact",
       title: "Optra — Industry AI Agent",
       desc: `<p>Custom operational AI agent tailored to your business operations — whether you run logistics, retail, distribution, field services, or multi-branch operations.</p>
       <ul>

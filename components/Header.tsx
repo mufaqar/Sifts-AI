@@ -10,9 +10,9 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: "#ai-agents", label: "AI Agents" },
-    { href: "#integrations", label: "Integrations" },
-    { href: "#security", label: "Security" },
+    { href: "/#ai-agents", label: "AI Agents" },
+    { href: "/#integrations", label: "Integrations" },
+    { href: "/#security", label: "Security" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -24,7 +24,7 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center gap-3">
           <Link href="/">
-            <Image src="/images/logo.png" alt="sifts.ai logo" width={120} height={50} />
+            <Image src="/images/logo.png" alt="sifts.ai logo" width={170} height={100} />
           </Link>
         </div>
 
